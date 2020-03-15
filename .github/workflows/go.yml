@@ -21,7 +21,8 @@ jobs:
 
     - name: setup env
       run: |
-        mkdir go/bin
+        pwd
+        mkdir -p go/bin
       shell: bash
 
     - name: Check out code into the Go module directory
