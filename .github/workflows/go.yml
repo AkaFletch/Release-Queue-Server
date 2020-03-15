@@ -37,4 +37,4 @@ jobs:
         fi
 
     - name: Build
-      run: go build -v .
+      run: go build -v ./src/github.com/${{ github.repository }}
