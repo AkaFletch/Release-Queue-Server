@@ -38,8 +38,8 @@ jobs:
 
     - name: Build
       run: go build -v ./src/github.com/${{ github.repository }}
-
+    
     - uses: actions/upload-artifact@v1
-        with:
-          name: Release-Queue-Server-${{matrix.os}}-${{ matrix.go_version }}
-          path: Release-Queue-Server
+      with:
+        name: Release-Queue-Server-${{matrix.os}}-${{ matrix.go_version }}
+        path: Release-Queue-Server
