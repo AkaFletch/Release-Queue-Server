@@ -2,6 +2,42 @@
 
 
 [[projects]]
+  digest = "1:7caeb526eadf6c4cfd515508a48b623bcce0523c191dbae804170b86a6ef9a06"
+  name = "github.com/akamensky/argparse"
+  packages = ["."]
+  pruneopts = "UT"
+  revision = "936811b12db25dad4b7b86cbfd1dcc61571145cc"
+  version = "v1.2.1"
+
+[[projects]]
+  digest = "1:01a3bf7bc37c96547897d253f8437c89cd8e80ea0211ff5f440fbc19f44cd14e"
+  name = "github.com/graphql-go/graphql"
+  packages = [
+    ".",
+    "gqlerrors",
+    "language/ast",
+    "language/kinds",
+    "language/lexer",
+    "language/location",
+    "language/parser",
+    "language/printer",
+    "language/source",
+    "language/typeInfo",
+    "language/visitor",
+  ]
+  pruneopts = "UT"
+  revision = "02caa8943d64d9cd60bd67f2bc163676716bb963"
+  version = "v0.7.9"
+
+[[projects]]
+  digest = "1:fef0874d72d1f1f1cb61d390980fef4abdfb9d4a52446556e4414627833e3702"
+  name = "github.com/graphql-go/handler"
+  packages = ["."]
+  pruneopts = "UT"
+  revision = "c1267356e6539d975e83bbea383c2bbb861dce5b"
+  version = "v0.2.3"
+
+[[projects]]
   digest = "1:f9efb765c4f3aff4b4c9948ae1aed344f3c76566ced247a9ff7c658a903b029b"
   name = "github.com/ian-kent/go-log"
   packages = [
@@ -42,6 +78,11 @@
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  input-imports = ["github.com/ian-kent/go-log/log"]
+  input-imports = [
+    "github.com/akamensky/argparse",
+    "github.com/graphql-go/graphql",
+    "github.com/graphql-go/handler",
+    "github.com/ian-kent/go-log/log",
+  ]
   solver-name = "gps-cdcl"
   solver-version = 1
