@@ -21,8 +21,7 @@ jobs:
 
     - name: setup env
       run: |
-        echo "::set-env name=GOPATH::$(go env GOPATH)"
-        echo "::add-path::$(go env GOPATH)/bin"
+        mkdir go/bin
       shell: bash
 
     - name: Check out code into the Go module directory
