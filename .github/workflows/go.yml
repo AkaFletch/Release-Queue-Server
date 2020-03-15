@@ -17,8 +17,6 @@ jobs:
       uses: actions/setup-go@v1
       with:
         go-version: ${{ matrix.go_version }}
-      env: 
-        GOPATH: $HOME
       id: go
 
     - name: Check out code into the Go module directory
