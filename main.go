@@ -38,7 +38,7 @@ func shutdown(signals chan os.Signal, shutdown chan bool) {
 
 func parseArguments() error {
 	parser := argparse.NewParser("Release Queue Server", "Records pending releases and provides stats on release frequency etc")
-	configPath := parser.String("c", "config", &argparse.Options{Default: "/etc/rqs/rqs.conf"})
+	configPath := parser.String("c", "config", &argparse.Options{Default: "config.json"})
 	err := parser.Parse(os.Args)
 	if err != nil {
 		log.Error("Error Reading arguments: %q", err)
