@@ -19,17 +19,12 @@ jobs:
         go-version: ${{ matrix.go_version }}
       id: go
 
-    - name: setup env
-      run: |
-        pwd
-        mkdir -p go/bin
-      shell: bash
-
     - name: Check out code into the Go module directory
       uses: actions/checkout@v2
 
     - name: Get dependencies
       run: |
+        mkdir -p home/runner/go/bin 
         go get -v -t -d ./...
         if [ -f Gopkg.toml ]; then
             curl https://raw.githubusercontent.com/golang/dep/master/install.sh | sh
