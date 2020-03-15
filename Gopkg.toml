@@ -31,5 +31,13 @@
   version = "0.7.9"
 
 [[constraint]]
+  name = "github.com/graphql-go/handler"
+  version = "0.2.3"
+
+[[constraint]]
   name = "github.com/ian-kent/go-log"
   version = "0.1.0"
+
+[[constraint]]
+  name = "github.com/akamensky/argparse"
+  version = "1.2.1"
